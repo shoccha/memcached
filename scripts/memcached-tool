@@ -79,7 +79,7 @@ else {
 }
 die "Couldn't connect to $addr\n" unless $sock;
 
-if ($mode eq 'dump') {
+if ($mode eq 'dump' || $mode eq 'dumpkeys') {
     my %items;
     my $totalitems;
 
